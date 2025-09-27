@@ -1,0 +1,119 @@
+/* Reset basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("/static/images/gradient-abstract-wireframe-background_23-2149009903.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(18, 19, 170, 0.8);
+  color: white;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+header h1 span {
+  color: #ffd700;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.nav-buttons a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 15px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #162096;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-buttons a:hover {
+  background-color: #0e157a;
+  transform: scale(1.05);
+}
+
+.nav-buttons .signin {
+  background-color: #ff8800;
+}
+
+.nav-buttons .signin:hover {
+  background-color: #e67300;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.intro-text {
+  flex: 1 1 400px;
+  color:rgb(75, 75, 219);
+}
+
+.intro-text h2 {
+  color: #1213aa;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.intro-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.intro-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(18, 19, 170, 0.9);
+  color: white;
+  margin-top: 50px;
+}
+

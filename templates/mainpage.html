@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects1213</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='mainpage.css') }}">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to <span>Projects1213</span></h1>
+    <p>Your go-to company for custom website solutions</p>
+  </header>
+
+  <nav class="nav-buttons">
+    <a href="{{ url_for('products') }}" target="_blank">Products</a>
+    <a href="{{ url_for('pricing') }}" target="_blank">Pricing</a>
+    <a href="{{ url_for('websites') }}"  target="_blank">Readymade Websites</a>
+    <a href="{{ url_for('aboutus')}}" target="_blank">About Us</a>
+    <a href="{{url_for('faq')}}" target="_blank">FAQ</a>
+    <a href="" target="_blank">Scripts</a>
+    <a href="{{url_for('signup')}}" target="_blank" class="signin">Sign In</a>
+    {% if show_button %}
+      <a href="{{url_for(dashboard)}}">Dashboard</a>
+    {% endif %}
+  </nav>
+
+  <main>
+    <section class="intro">
+      <div class="intro-text">
+        <h2>What We Do</h2>
+        <p>
+          At Projects1213, we build, manage, and customize website projects tailored to your needs.
+          From readymade templates to complex custom builds, we handle it all.
+        </p>
+        <p>
+          Our pricing depends on your project's complexity, tech stack, and scripting needs.
+        </p>
+      </div>
+      <div class="intro-image">
+        <img src="{{ url_for('static', filename='images/computer-program-coding-screen_53876-138060.jpg') }}" alt="Creeper" width="300">
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Projects1213. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+<!--Choose a clean layout
+✅ Use a nice font + color combo
+✅ Master spacing and alignment
+✅ Add smooth hover effects
+✅ Keep it simple & responsive
+✅ Practice by copying dope websites--> 

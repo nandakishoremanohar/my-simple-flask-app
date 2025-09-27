@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  background-color: rgb(3, 3, 153);
+  color: white;
+  padding: 40px 20px;
+}
+
+header span {
+  color: #ffd700;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.pricing-table th {
+  background-color: #1213aa;
+  color: white;
+}
+
+.pricing-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1213aa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0e0e7a;
+}
+
+footer {
+  background-color: rgb(3, 3, 153);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}

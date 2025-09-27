@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects1213 – FAQ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #121212;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .faq-item {
+      background-color: #fff;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.1rem;
+      position: relative;
+      background-color: #efefef;
+    }
+
+    .faq-question::after {
+      content: '+';
+      position: absolute;
+      right: 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    .faq-item.active .faq-question::after {
+      content: '-';
+    }
+
+    .faq-answer {
+      padding: 1rem 1.5rem;
+      display: none;
+      line-height: 1.6;
+      background-color: #fff;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Projects1213 – FAQ</h1>
+  </header>
+
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <div class="faq-question">1. What is Projects1213?</div>
+      <div class="faq-answer">
+        Projects1213 is a creative and digital solutions provider working on innovative design, development, and media projects.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">2. What services do you offer?</div>
+      <div class="faq-answer">
+        We offer web design, software development, branding, content creation, and consulting services tailored to our clients' needs.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">3. How can I start a project?</div>
+      <div class="faq-answer">
+        Reach out via our contact form or email us at hello@projects1213.com with your project idea and we’ll guide you from there.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">4. What’s your pricing model?</div>
+      <div class="faq-answer">
+        We offer flat-rate, milestone-based, or hourly pricing depending on the project. Contact us for a personalized quote.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">5. What if I'm not satisfied with the final result?</div>
+      <div class="faq-answer">
+        We provide multiple revision rounds and client collaboration throughout. Satisfaction is our top priority.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">6. Where are you based?</div>
+      <div class="faq-answer">
+        We’re based remotely, working with clients worldwide. Collaboration is entirely online via video, chat, and email.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">7. Do you offer post-project support?</div>
+      <div class="faq-answer">
+        Yes. We offer 30 days of free support and optional ongoing maintenance packages for updates and improvements.
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Projects1213. All rights reserved.
+  </footer>
+
+  <script>
+    const items = document.querySelectorAll('.faq-item');
+    items.forEach(item => {
+      item.querySelector('.faq-question').addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

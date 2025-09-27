@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 1rem;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        .container {
+            padding: 2rem;
+            text-align: center;
+        }
+        .welcome {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .logout-btn {
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .logout-btn:hover {
+            background-color: #c0392b;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-left: 900px;
+
+        }
+
+        .btn:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div>My Dashboard</div>
+        <div>
+            <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+            <a href="{{url_for('home')}}" class="btn">Home</a>
+        </div>>
+    </div>
+
+    <div class="container">
+        <p class="welcome">Welcome, {{ username }}! 🎉</p>
+        <p>You are successfully logged in.</p>
+        <!-- You can add more dashboard content here -->
+    </div>
+
+</body>
+</html>

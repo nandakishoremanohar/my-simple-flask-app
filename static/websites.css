@@ -1,0 +1,70 @@
+/* Reset basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header styling */
+header {
+  background-color: #1213aa;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+ margin-bottom: 10px;
+}
+
+header h1 span {
+  color: #ffd700;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  color: #e0e0e0;
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.intro, .sales-pitch {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-left: #1213aa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.intro h2, .sales-pitch h2 {
+  font-size: 1.8em;
+  color: #1213aa;
+  margin-bottom: 10px;
+}
+
+.emoji {
+  font-size: 1.5em;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1213aa;
+  color: white;
+  margin-top: 50px;
+}
