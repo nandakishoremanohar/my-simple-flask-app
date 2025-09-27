@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+
+# Flask secrets
+.env
+instance/
+
+# Database files
+*.sqlite3
+
+# VS Code settings (optional)
+.vscode/
