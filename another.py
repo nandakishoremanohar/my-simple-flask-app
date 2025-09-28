@@ -53,6 +53,12 @@ def faq():
         return redirect(url_for('signup'))
     return render_template('faq.html')
 
+@app.route('/Scripts')
+def scripts():
+    if not session.get('loggedin'):
+        return redirect(url_for('signup'))
+    return render_template('scripts.html')
+
 @app.route('/signup', methods=['GET', 'POST'])#methods to get the input
 def signup():
     if request.method == 'POST':#if the methd id post 
@@ -117,4 +123,7 @@ def logout():
 print(app.secret_key)
 # Run the app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True)#im sorry
+    
+
+
